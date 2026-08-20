@@ -23,6 +23,25 @@
 </head>
 
 <body>
+    <!-- PANTALLA DE LOGIN -->
+    <div id="login-screen" class="login-overlay">
+        <div class="login-box">
+            <h2>Alto ahí my love... 👮‍♂️❤️</h2>
+            <p class="login-hint">Pista: ¿Qué sentimos el uno por el otro que pasa sobre todas las cosas?</p>
+
+            <input type="text" id="login-user" placeholder="Tu nombre..." autocomplete="off">
+            <input type="password" id="login-pass" placeholder="La palabra mágica...">
+
+            <button id="btn-login" class="btn-magico" style="margin-top: 1rem;">Entrar a mi corazón</button>
+            <!-- Mensaje de éxito (oculto por defecto) -->
+<div id="success-message" class="success-message">
+    <span class="checkmark">✓</span>
+    <h2>¡CORRECTO! ❤️</h2>
+    <p>Entrando a tu sorpresa...</p>
+</div>
+            <p id="login-error" class="login-error">Ups, esa no es la clave. Intenta de nuevo.</p>
+        </div>
+    </div>
 
     <!-- SECCIÓN 1: HERO (La entrada triunfal) -->
     <header id="hero" class="section">
@@ -149,7 +168,8 @@
 
             <!-- Contenedor oculto que tu JS revelará al hacer clic en el botón -->
             <div id="regalo-final" class="hidden-regalo">
-                <h3 class="texto-regalo">¡Te amo infinitamente mi amorcita de mi corazhon! ❤️❤️❤️❤️❤️❤️❤️❤️ ohhh kumonii</h3>
+                <h3 class="texto-regalo">¡Te amo infinitamente mi amorcita de mi corazhon! ❤️❤️❤️❤️❤️❤️❤️❤️ ohhh kumonii
+                </h3>
                 <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2h4bTBpMDhuN3o1MGNreDFndHZzZWJzOTJpbHM0aG5mYms5a3NtOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fOqzMnu0EhxmM/giphy.gif"
                     alt="Corazones animados" class="gif-corazones">
                 <br>

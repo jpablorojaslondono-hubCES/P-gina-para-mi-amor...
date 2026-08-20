@@ -292,3 +292,105 @@ footer {
         font-size: 1.8rem;
     }
 }
+
+/* =========================================
+   PANTALLA DE LOGIN
+   ========================================= */
+.login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 240, 243, 0.95); /* Fondo rosado semitransparente */
+    backdrop-filter: blur(8px); /* Efecto de desenfoque elegante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Asegura que esté POR ENCIMA de todo */
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+/* Clase para ocultar el login con animación */
+.login-overlay.oculto {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; /* Ya no se puede hacer clic en él */
+}
+
+.login-box {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(255, 117, 143, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.login-hint {
+    font-style: italic;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.login-error {
+    color: #ff4757;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    display: none; /* Oculto por defecto */
+}
+
+/* Bloquea el scroll del body cuando el login está activo */
+body.bloqueado {
+    overflow: hidden;
+}
+/* Mensaje de éxito */
+.success-message {
+    display: none; /* Oculto al inicio */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efecto rebote */
+}
+
+.success-message h2 {
+    color: #2ecc71; /* Verde éxito */
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.success-message p {
+    color: var(--color-text);
+    font-size: 1rem;
+}
+
+.checkmark {
+    font-size: 4rem;
+    color: #2ecc71;
+    font-weight: bold;
+    animation: scaleUp 0.5s ease-out;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
