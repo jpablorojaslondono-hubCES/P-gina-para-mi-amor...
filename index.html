@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti... Mi Princesa Linda...</title>
+
+    <!-- 🛠️ CONFIGURAR: Cambia estos metadatos para que al compartir el link en WhatsApp salga bonito -->
+    <meta property="og:title" content="Una sorpresa para ti, Jimena">
+    <meta property="og:description" content="Abre este link, por favor... tengo algo que decirte.">
+    <meta property="og:image" content="img/logo_mujer_hermosa.jpg">
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Enlace al CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- SECCIÓN 1: HERO (La entrada triunfal) -->
+    <header id="hero" class="section">
+        <h1 class="hidden animate-text">Para la chica más hermosa del mundo</h1>
+
+        <!-- 🛠️ CONFIGURAR: Asegúrate de que la imagen 'logo_mujer_hermosa.jpg' exista en tu carpeta 'img' -->
+        <img class="logo hidden animate-text" src="img/logo_mujer_hermosa.jpg" alt="Jimena, la mujer más hermosa">
+
+        <h2 class="hidden animate-text subtitle-hero">Jimena, amor de mi vida...</h2>
+        <p class="hidden animate-text">Desliza hacia abajo...</p>
+
+        <!-- Indicador de scroll animado -->
+        <div class="scroll-indicator hidden">↓</div>
+    </header>
+
+    <main>
+        <!-- SECCIÓN 2: NUESTRA HISTORIA (Timeline) -->
+        <section id="historia" class="section">
+            <h2 class="hidden">Nuestra Historia</h2>
+
+            <div class="timeline-container">
+                <!-- 🛠️ CONFIGURAR: Edita los textos de estos recuerdos. Puedes copiar y pegar todo el bloque <article> para añadir más -->
+                <article class="memory-card hidden" data-year="2026">
+                    <h3>El día que nos conocimos</h3>
+                    <p>Fue un día tan especial... sentía que me tiraba contra el mundo, esperando estrellarme.... al
+                        final, vi una luz que me guiaba hacia alguien, y no sabía bien, que o para qué lo hacía, hasta
+                        que vi tu silueta, aburrida, tal vez constipada, o con el ceño fruncido, pero, desde que te vi,
+                        supe que ibas a ser la mujer con la que quería pasar el resto de mis días...</p>
+                </article>
+
+                <article class="memory-card hidden" data-year="2026">
+                    <!-- 🛠️ CONFIGURAR: Cambia este título y texto por tu primer viaje o cita real -->
+                    <h3>Nuestra primera salida...</h3>
+                    <p>Escribe aquí un recuerdo de cuando viajaron juntos o su primera cita oficial. Detalles como el
+                        clima, lo que comieron o cómo te hiciste sentir, hacen que este texto sea inolvidable.</p>
+                </article>
+                <img class="primerSalida" width="350px" src="img/primer_viaje_juntos.jpg" alt="primer_viaje">
+
+                <article class="memory-card hidden" data-year="2026">
+                    <!-- 🛠️ CONFIGURAR: Cambia este título y texto por tu primer viaje o cita real -->
+                    <h3>Nuestra segunda salida...</h3>
+                    <p> A pesar de lo sencillo, no hay momento en el que más paz pude haber sentido...</p>
+                    <p>Fue simplemente un click que hizo en mi y que no puedo evitar sentir por ti...</p>
+                    <p>Eres esa <strong>llama</strong>❤️‍🔥 que vive en mi...</p>
+                </article>
+                <img class="segundaSalida" width="450px" src="img/segundaSalida.jpg" alt="primer_viaje">
+
+            </div>
+
+        </section>
+
+        <!-- SECCIÓN 3: GALERÍA INTERACTIVA -->
+        <section id="galeria" class="section">
+            <h2 class="hidden">Momentos en el tiempo</h2>
+            <p class="hidden">Haz clic en las fotos para recordar...</p>
+
+            <div class="gallery-grid hidden">
+                <!-- 🛠️ CONFIGURAR: Reemplaza 'foto1.jpg', etc., con los nombres reales de tus fotos en la carpeta 'img' -->
+                <div class="gallery-item" data-img="1">
+                    <p>Nuestra primera foto juntos...</p>
+                    <br>
+                    <img src="img/amorprimerafoto.jpg" alt="Nuestra primera foto juntos">
+                </div>
+                <div class="gallery-item" data-img="2">
+                    <p>Ese día que nos peleamos y nos arreglamos..</p>
+
+                    <img src="img/dia_despues_depelear.jpg" alt="Ese día que nos peleamos y nos arreglamos..">
+                </div>
+                <div class="gallery-item" data-img="3">
+                    <p>Mi lugar favorito contigo, apapachaditos...</p>
+                    <img src="img/apapachaditos_juntitos.jpg" alt="Mi lugar favorito contigo">
+                </div>
+                <div class="gallery-item" data-img="4">
+                    <p>Apapachados otra vez...</p>
+                    <br>
+                    <img src="img/amor1.jpg" alt="Mi lugar favorito contigo">
+                </div>
+                <div class="gallery-item" data-img="5">
+                    <p>El día que conocí a tú primo...</p>
+                    <br>
+                    <img src="img/amor2.jpg" alt="Mi lugar favorito contigo">
+                </div>
+                <div class="gallery-item" data-img="6">
+                    <p>Día de comida...</p>
+                    <br>
+                    <img src="img/amor3.jpg" alt="Mi lugar favorito contigo">
+                </div>
+                <div class="gallery-item" data-img="7">
+                    <p>Día de caminata.. te pusiste toda roja 🤣</p>
+                    <img src="img/amor4.jpg" alt="Mi lugar favorito contigo">
+                </div>
+                <div class="gallery-item" data-img="8">
+                    <p>De mi fotos favoritas...</p>
+                    <br>
+                    <img src="img/amor5.jpg" alt="Mi lugar favorito contigo">
+                </div>
+                <div class="gallery-item" data-img="9">
+                    <p>El día que conocí a casi que toda tú familia...</p>
+                    <img src="img/amor6.jpg" alt="Mi lugar favorito contigo">
+                </div>
+                <br>
+                <div class="gallery-item dia_especial" data-img="10">
+                    <p>Nuestro día especial...</p>
+                    <img src="img/amor7.jpg" alt="Mi lugar favorito contigo">
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: EL MENSAJE FINAL / INTERACCIÓN -->
+        <section id="mensaje-final" class="section">
+            <h2 class="hidden">Una última cosa...</h2>
+            <p class="hidden mensaje-final-texto">
+                <!-- 🛠️ CONFIGURAR: Escribe tu mensaje final, tu declaración o la razón por la que la amas -->
+                No hay palabras suficientes en esta página o código que hice, para demostrarte lo mucho que te amo, por
+                eso, quisiera darte personalmente algo...
+            </p>
+
+            <!-- 🛠️ CONFIGURAR: Puedes cambiar el texto del botón -->
+            <button id="btn-sorpresa" class="btn-magico hidden">
+                Toca aquí para tu regalo final
+            </button>
+
+            <!-- Contenedor oculto que tu JS revelará al hacer clic en el botón -->
+            <div id="regalo-final" class="hidden-regalo">
+                <h3 class="texto-regalo">¡Te amo infinitamente mi amorcita de mi corazhon! ❤️❤️❤️❤️❤️❤️❤️❤️ ohhh kumonii</h3>
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2h4bTBpMDhuN3o1MGNreDFndHZzZWJzOTJpbHM0aG5mYms5a3NtOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fOqzMnu0EhxmM/giphy.gif"
+                    alt="Corazones animados" class="gif-corazones">
+                <br>
+                <div class="youtube-player">
+                    <br>
+                    <p>❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</p>
+                    <br>
+                    <img class="ourSong" width="350px"
+                        src="https://i.scdn.co/image/ab67616d0000b273dc8252eaec0aaba71e359082" alt="Give_it_up_to_me">
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=bMoNV9oWs2E"> Nuestra canción...</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hecho con 🖥️ y mucho ❤️ para ti mi cuchurrumina linda..</p>
+    </footer>
+
+    <!-- Enlace al JS externo (al final del body para mejor rendimiento) -->
+    <script src="js/baseJs.js"></script>
+</body>
+
+</html>
