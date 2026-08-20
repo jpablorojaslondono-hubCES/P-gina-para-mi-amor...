@@ -279,19 +279,7 @@ footer {
 }
 
 /* Responsive para móviles */
-@media (max-width: 768px) {
-    .logo {
-        max-width: 90%;
-    }
 
-    h1 {
-        font-size: 2rem;
-    }
-
-    .texto-regalo {
-        font-size: 1.8rem;
-    }
-}
 
 /* =========================================
    PANTALLA DE LOGIN
@@ -393,4 +381,34 @@ body.bloqueado {
 @keyframes popIn {
     0% { transform: scale(0.5); opacity: 0; }
     100% { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .logo { max-width: 90%; }
+    h1 { font-size: 2rem; }
+    
+    /* ✅ AGREGAR ESTO: */
+    .mensaje-final-texto {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+    }
+    
+    .texto-regalo {
+        font-size: 1.3rem; /* Más pequeño que 1.8rem */
+        padding: 0 1rem;
+    }
+    
+    .btn-magico {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+    
+    .gif-corazones {
+        max-width: 250px;
+        width: 80%;
+    }
+    
+    .ourSong {
+        width: 200px !important;
+    }
 }
